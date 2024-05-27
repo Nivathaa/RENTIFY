@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>rentify Seller Flow</title>
+</head>
+    <body onload="loadProperties()">
+        <div class="form-container" align="center">
+            <form onsubmit="addProperty(); return false;">
+    <h1 style="color: blueviolet";>RENTIFY</h1><br><br>
+    <h1 align="center">SELLER FLOW</h1>
+   
+        ADDRESS: <input type="text" id="address" /><br><br>
+        AREA: <input type="text" id="area" /><br><br>
+        PLACE: <input type="text" id="place" /><br><br>
+        SQUARE FEET: <input type="number" id="squareFeet" /><br><br>
+        HOSPITAL NEARBY: <input type="number" id="hospitalNearby" /><br><br>
+        COLLEGE NEARBY: <input type="number" id="collegeNearby" /><br><br>
+        NUMBER OF BEDROOMS: <input type="number" id="bedrooms" /><br><br>
+        NUMBER OF BATHROOMS: <input type="number" id="bathrooms" /><br><br>
+        <button type="submit">Add Property</button>
+            <a href="buy.html">View Property</a>
+        </form>
+    </div>
+
+    <h3 align="center">PROPERTY INFORMATION</h3>
+    <table id="propertyTable" border="1" align="center" width="100%">
+        <thead>
+        <tr>
+            <th>SNO</th>
+            <th>ADDRESS</th>
+            <th>AREA</th>
+            <th>PLACE</th>
+            <th>SQUARE FEET</th>
+            <th>HOSPITAL NEARBY</th>
+            <th>COLLEGE NEARBY</th>
+            <th>NUMBER OF BEDROOMS</th>
+            <th>NUMBER OF BATHROOMS</th>
+            <th>UPDATE / DELETE</th>
+        </tr>
+        <tbody>
+            <!-- Property rows will be inserted here -->
+        </tbody>
+        </thead>
+     
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>

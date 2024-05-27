@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RENTIFY</title>
+ 
+</head>
+<body>
+    <form action="/" method="post">
+        <h1 style="color: blueviolet";>RENTIFY</h1>
+        <link rel="stylesheet" href="fir.css">
+        
+            <h1>REGISTRATION FORM</h1>
+            <div>
+            <h2>REGISTER</h2><br><br>
+            FirstName:<input type="text"  id="t1"  onblur="c1()"  placeholder="type your FirstName"/><p id="tt1"></p>
+            LastName:<input type="text"  id="t2" onblur="c2()" placeholder="type LastName"/><p id="tt2"></p>
+            Email:<input type="email" id="t3" onblur="c3()" placeholder="type mail"/><p id="tt3"></p>
+            PhoneNo:<input type="number" id="t4" onblur="c4()" placeholder="type PhoneNo"/><p id="tt4"></p>
+            <br><br>
+            <a href="sellbuy.html" class="button">SUBMIT</a>
+
+              
+            </div>
+        
+            
+            <script>
+                function c1()
+                {
+                   var pat = /^[A-Z a-z]{4}$/ 
+                   var a = document.getElementById("t1").value;
+                   if(!pat.test(a))
+                   {
+                       document.getElementById("tt1").innerHTML="invalid";
+                       document.getElementById("tt1").style="color:red;";
+                   }   
+                   else
+                   {
+                       document.getElementById("tt1").innerHTML="valid";
+                       document.getElementById("tt1").style="color:green;";
+                   } 
+               }
+               function c2()
+                {
+                   var pat = /^[A-Z a-z]{4}$/ 
+                   var b = document.getElementById("t2").value;
+                   if(!pat.test(b))
+                   {
+                       document.getElementById("tt2").innerHTML="invalid";
+                       document.getElementById("tt2").style="color:red;";
+                   }   
+                   else
+                   {
+                       document.getElementById("tt2").innerHTML="valid";
+                       document.getElementById("tt2").style="color:green;";
+                   } 
+               }
+               function c3()
+                {
+                   var pat = /^[A-Z a-z]{3}[0-9]{3}@gmail.com*$/ 
+                   var b = document.getElementById("t3").value;
+                   if(!pat.test(b))
+                   {
+                       document.getElementById("tt3").innerHTML="invalid";
+                       document.getElementById("tt3").style="color:red;";
+                   }   
+                   else
+                   {
+                       document.getElementById("tt3").innerHTML="valid";
+                       document.getElementById("tt3").style="color:green;";
+                   } 
+               }
+
+               function c4()
+                {
+                   var pat = /^[0-9]{10}$/ 
+                   var b = document.getElementById("t4").value;
+                   if(!pat.test(b))
+                   {
+                       document.getElementById("tt4").innerHTML="invalid";
+                       document.getElementById("tt4").style="color:red;";
+                   }   
+                   else
+                   {
+                       document.getElementById("tt4").innerHTML="valid";
+                       document.getElementById("tt4").style="color:green;";
+                   } 
+               }
+       
+               </script>
+               
+        </form>
+    </div>
+</body>
+</html>
